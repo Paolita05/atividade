@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Resumo de CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>˙⋆✮ Principais conceitos de seletores, cascata e box model ˙⋆✮</h1>
+
+  </header>
+
+  <main>
+    <section>
+      <div>
+        <h2>✅Regra da Cascata</h2>
+        <p>A cascata é o mecanismo do CSS que define qual estilo será aplicado quando há conflito.
+          Ordem de prioridade:</p>
+        <ul>
+          <li>
+            Importância: regras com !important têm prioridade máxima.
+          </li>
+          <li>Especificidade: ID > Classe > Tag.</li>
+          <li>Ordem: a última regra escrita no código vence.</li>
+        </ul>
+      </div>
+      </div>
+      <h2> 🖥️ Especificidade</h2>
+      <ul>
+        <li>É o "peso" de cada seletor.</li>
+        <li>Tag (elemento) → peso baixo (ex.: p, h1).</li>
+        <li>Classe, pseudo-classes, atributos → peso médio (ex.: .caixa, :hover).</li>
+        <li>ID → peso alto (ex.: #menu).</li>
+        <li>Estilo inline → prioridade máxima (ex.: style="color:red").</li>
+      </ul>
+      </div>
+      <div>
+        <h2> 🔗Combinação de seletores</h2>
+        <ul>
+          <li>Descendente (espaço): seleciona qualquer elemento dentro de outro, mesmo que não seja filho direto.</li>
+          <li>Filho direto (>): seleciona apenas o elemento que está logo dentro do pai.</li>
+          <li>Adjacente (+): seleciona o elemento que aparece imediatamente depois de outro.</li>
+        </ul>
+      </div>
+      <div>
+        <h2> ✅Pseudo-classes</h2>
+        <ul>
+          <li>:first-child → seleciona o primeiro filho de um elemento.</li>
+          <li>:last-child → seleciona o último filho de um elemento.</li>
+          <li>:nth-child(n) → seleciona o filho na posição n.</li>
+          <li>:nth-of-type(n) → seleciona o n-ésimo filho de um determinado tipo (por exemplo, o 3º <p>).</li>
+        </ul>
+      </div>
+      <div>
+        <h2> ⸜(｡˃ ᵕ ˂ )⸝  Diferença entre Display Inline e Block
+          Block:</h2>
+        <ul>
+          <li>Ocupa 100% da largura.</li>
+          <li>Quebra linha antes e depois.</li>
+          <li>Aceita width, height, margin e padding.</li>
+          <li>Exemplos: div, p, h1-h6, section.</li>
+          <li>Inline:</li>
+          <li>Ocupa só o espaço do conteúdo.</li>
+          <li>Não quebra linha.</li>
+          <li>Não aceita width e height (exceto img).</li>
+          <li>Exemplos: span, a, strong, em.</li>
+        </ul>
+      </div>
+      <div>
+        <h2> 🔎Margin, Padding e Border</h2>
+        <ul>
+          <li>Margin: espaço externo (fora da borda).</li>
+          <li>Padding: espaço interno (entre conteúdo e borda).</li>
+          <li>Border: a borda do elemento (cor, estilo e espessura).</li>
+        </ul>
+        <h2> 🖊Shorthand (formas de escrita):</h2>
+        <ul>
+          <li>1 valor → todos os lados iguais.</li>
+          <li>2 valores → primeiro vertical (top/bottom), segundo horizontal (left/right).</li>
+          <li>3 valores → top, horizontal (left/right), bottom.</li>
+          <li>4 valores → top, right, bottom, left (sentido horário).</li>
+        </ul>
+        <h2>  ⋆˙⟡♡Sufixos possíveis:⋆˙⟡♡</h2>
+        <ul>
+          <li>-top, -bottom, -left, -right</li>
+          <li>-block (top/bottom)</li>
+          <li>-inline (left/right)</li>
+        </ul>
+      </div>
+      <div>
+        <h2> ₍ᐢ. .ᐢ₎ Box-sizing</h2>
+
+        </ul> 
+        <li>Define como o navegador calcula largura e altura.</li>
+        <li>box-sizing: border-box; → o tamanho do elemento considera conteúdo + padding + borda, evitando que
+          ultrapasse a largura definida.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+
+</html>
